@@ -64,7 +64,7 @@ const newAdmin:Admin = {
   lastVisited: new Date(2023, 4, 6),
   role: "admin"
 }
-function login (newUser:{login: string, password: string}) {
+function login (newUser:{login: string, password: string}): void {
   if (newUser.login.length > 0 && newUser.password.length > 0) {
     console.log("Hello,", newUser.login)
   }
