@@ -37,12 +37,6 @@ function average(...nums: number[]) {
 
 console.log(average(12, 11, 10))
 
-const averageV2 = (...nums: number[]) => {
-    const sum = nums.reduce((current, total) => current + total, 0)
-    return sum / nums.length;
-}
-console.log(averageV2(4, 1, 1))
-
 const newSum = (a: number, b: number): number => a + b;
 console.log(newSum(4,2));
 

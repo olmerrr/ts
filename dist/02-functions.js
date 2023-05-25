@@ -32,11 +32,6 @@ function average(...nums) {
     return sum / nums.length;
 }
 console.log(average(12, 11, 10));
-const averageV2 = (...nums) => {
-    const sum = nums.reduce((current, total) => current + total, 0);
-    return sum / nums.length;
-};
-console.log(averageV2(4, 1, 1));
 const newSum = (a, b) => a + b;
 console.log(newSum(4, 2));
 function slice(str, start, end) {
