@@ -15,4 +15,4 @@ const pairsThird = [
     [2, false, "value2"],
     [3, true, "value3"],
 ];
-pairsThird.push("some?"); //
+// pairsThird.push("some?") // error

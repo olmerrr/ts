@@ -16,4 +16,5 @@ const pairsThird: [number, boolean, string] [] = [
   [2, false, "value2"],
   [3, true, "value3"],
 ];
+
 // pairsThird.push("some?") // error
