@@ -10,7 +10,6 @@ type JSONObject = {[k: string]:JSONValue};
 type JSONArray = JSONValue[];
 // в TS можно использовать type  до их обьявления
 type JSONValue =  JSONPrimitive | JSONObject | JSONArray;
-//recursive-types
 const test = [];
 
 function isJSON(arg: JSONValue) {};
@@ -18,3 +17,5 @@ isJSON(1);
 isJSON("test");
 isJSON({value: 1});
 isJSON([[1,2]]);
+
+//recursive-types
