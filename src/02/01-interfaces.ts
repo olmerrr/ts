@@ -13,7 +13,7 @@ interface UserForm {
 }
 interface Person {
   readonly firstName: string,
-  lastName: string,
+  lastName?: string,
   phone?: string,
   yearOfBirth?: number,
 }
@@ -22,9 +22,9 @@ interface Employee extends UserForm, Person {
   // могу добавить новое поле
   gender: string,
   // могу добавить свой union находу
-  expLevel?: "junior" | "middle" | "senior"
+  expLevel?: "junior" | "middle" | "senior",
   // методы
-  say(): void,
+  // say(): void,
   code?: (arg: string) => void
 }
 
@@ -33,9 +33,13 @@ const testUserOne: Employee = {
   lastName: "franko",
   isOnline: true,
   gender: "male",
-  expLevel: "middle"
+  expLevel: "middle",
+  email: "dafs@i.ua",
+  password: "dfdf",
+  login: "sobaka@il"
 }
 
+console.log(testUserOne);
 const testUser: UserForm = {
   email: "test@",
   login: "papka",
@@ -43,7 +47,7 @@ const testUser: UserForm = {
   isOnline: false,
 }
 
-class MyDeveloper implements Employee {
-  say() {
-  }
-}
+// class MyDeveloper implements Employee {
+//   say() {
+//   }
+// }
