@@ -1,7 +1,4 @@
 "use strict";
-const myBrandsNew = {
-    zara: ""
-};
 const visitedCountries = {
     Africa: ['Egypt', 'Angola', 'Tunis'],
     America: ['Mexico'],

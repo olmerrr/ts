@@ -5,9 +5,9 @@ type Names = Record<string, number>
 type Brands = "prada" | "zara" | "HM";
 
 type BrandNames  = Record<Brands, string>
-const myBrandsNew: BrandNames = {
-  zara: ""
-}
+// const myBrandsNew: BrandNames = {
+//   zara: ""
+// }
 
 interface NewTodo {
   id: string,
